@@ -1,3 +1,28 @@
+Aspire IQ Frontend Take Home: Email Input
+Candidate: Alan Deng
+https://www.linkedin.com/in/alan-deng-350915101/
+Time spent: ~ 3 hours
+
+# Experience
+My inital plans for this project involved simply creating a text input that had a dynamic ul list that populated underneath. With some css, I got it to look like a select element but for a test input. 
+(approx 20 minutes)
+
+On the React side, I made an event listener to update current value, and also to update/depopulate the dropdown upon user interaction. I also made a renderer for the dropdown list.
+(approx 50 minutes)
+
+Afterwords, I planned on how to make those email tabs appear when they are selected. Since I did not attempt to use any other libraries and focus on vanilla React, I decided to use buttons since the functionality of press-to-remove was apparent in the Figma. While attempting to make a render function to display the selected emails, I had difficulty trying to get my input div to dynamically width-up to the remaining space inside a flex div. I eventually realized the reason the input was always appearing below the email buttons was because I was rendering the buttons inside a div container which was a flex subject. I changed the code such that the button renderer also rendered the input element within the returned div, and this cleared the process. On the React side, I made a renderer for the buttons and cleaned up some code.
+(approx 1.5 hours)
+
+Afterwards I realized I hadn't thought of keyboard submission, so on the React side I added an event listener for the Enter and Tab key. I furthermore added some css to make the app look closer to the Figma demo.
+(approx 20 min)
+
+The last part involved removing emails from the selected list. I had to use a temp global array in order to setState because I couldn't figure out in time on how to bind inherent array functions to state. More css work and also added an alert for when email is invalid. The validation regex was one used in w3 schools. There are many regex that can be used to validate an email format but it would have taken me too long to experiment here.
+(approx 30 min)
+
+I did not add any icons or custom scrollbars as I was working with vanilla React, but I believe the overall look of my final application seems quite well compared to the Figma demo. If I had more time on this project, I would have definetly created my own email validation regex. I would also have possibly cleaned up unnecessary css since it always happens.
+
+I would have also liked to have made unit tests, but I felt pressured on time and was not familiar with the framework. This was my first attempt at a React project of any scale, and it was a pleasant experience. I look forward to keeping in touch.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
